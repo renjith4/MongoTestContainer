@@ -1,0 +1,68 @@
+2019-11-12T16:11:23.664+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8268 port=27017 dbpath=/Users/renjith/projects/other/MongoTestContainer/test/resources/data/db 64-bit host=ptolemy
+2019-11-12T16:11:23.665+0000 I CONTROL  [initandlisten] db version v4.0.3
+2019-11-12T16:11:23.665+0000 I CONTROL  [initandlisten] git version: 7ea530946fa7880364d88c8d8b6026bbc9ffa48c
+2019-11-12T16:11:23.666+0000 I CONTROL  [initandlisten] allocator: system
+2019-11-12T16:11:23.666+0000 I CONTROL  [initandlisten] modules: none
+2019-11-12T16:11:23.667+0000 I CONTROL  [initandlisten] build environment:
+2019-11-12T16:11:23.667+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-11-12T16:11:23.668+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-11-12T16:11:23.669+0000 I CONTROL  [initandlisten] options: { net: { ssl: { CAFile: "ca.crt", PEMKeyFile: "server.pem", mode: "requireSSL" } }, processManagement: { fork: true }, storage: { dbPath: "data/db" }, systemLog: { destination: "file", path: "data/mongod.log" } }
+2019-11-12T16:11:23.673+0000 W STORAGE  [initandlisten] Detected unclean shutdown - /Users/renjith/projects/other/MongoTestContainer/test/resources/data/db/mongod.lock is not empty.
+2019-11-12T16:11:23.674+0000 I STORAGE  [initandlisten] Detected data files in /Users/renjith/projects/other/MongoTestContainer/test/resources/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-11-12T16:11:23.675+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-11-12T16:11:23.676+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-11-12T16:11:24.439+0000 I STORAGE  [initandlisten] WiredTiger message [1573575084:439155][8268:0x11404e5c0], txn-recover: Main recovery loop: starting at 2/9216
+2019-11-12T16:11:24.440+0000 I STORAGE  [initandlisten] WiredTiger message [1573575084:440387][8268:0x11404e5c0], txn-recover: Recovering log 2 through 3
+2019-11-12T16:11:24.528+0000 I STORAGE  [initandlisten] WiredTiger message [1573575084:528288][8268:0x11404e5c0], txn-recover: Recovering log 3 through 3
+2019-11-12T16:11:24.584+0000 I STORAGE  [initandlisten] WiredTiger message [1573575084:584465][8268:0x11404e5c0], txn-recover: Set global recovery timestamp: 0
+2019-11-12T16:11:24.714+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-11-12T16:11:24.799+0000 I CONTROL  [initandlisten] 
+2019-11-12T16:11:24.800+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-11-12T16:11:24.801+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-11-12T16:11:24.801+0000 I CONTROL  [initandlisten] 
+2019-11-12T16:11:24.802+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-11-12T16:11:24.803+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-11-12T16:11:24.804+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-11-12T16:11:24.805+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-11-12T16:11:24.805+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-11-12T16:11:24.806+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-11-12T16:11:24.807+0000 I CONTROL  [initandlisten] 
+2019-11-12T16:11:24.808+0000 I CONTROL  [initandlisten] 
+2019-11-12T16:11:24.809+0000 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2019-11-12T16:11:24.902+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/renjith/projects/other/MongoTestContainer/test/resources/data/db/diagnostic.data'
+2019-11-12T16:11:24.906+0000 I NETWORK  [initandlisten] waiting for connections on port 27017 ssl
+2019-11-12T16:11:25.023+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2019-11-12T16:13:18.026+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56057 #1 (1 connection now open)
+2019-11-12T16:13:18.028+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56058 #2 (2 connections now open)
+2019-11-12T16:13:18.340+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:56058 conn2: { os: { type: "Darwin", name: "mac os x", architecture: "x86_64", version: "10.14.6" }, platform: "Scala 2.12", application: { name: "Supervisor-1/Connection-1" }, driver: { name: "ReactiveMongo", version: "0.18.7" } }
+2019-11-12T16:13:18.431+0000 I ACCESS   [conn1]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:18.725+0000 I STORAGE  [conn1] createCollection: localdb.users with generated UUID: 9056c6dd-b373-4c0b-a494-301f6221c172
+2019-11-12T16:13:28.062+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56059 #3 (3 connections now open)
+2019-11-12T16:13:28.063+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56060 #4 (4 connections now open)
+2019-11-12T16:13:28.066+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56061 #5 (5 connections now open)
+2019-11-12T16:13:28.076+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56062 #6 (6 connections now open)
+2019-11-12T16:13:28.206+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56063 #7 (7 connections now open)
+2019-11-12T16:13:28.208+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56064 #8 (8 connections now open)
+2019-11-12T16:13:28.214+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56065 #9 (9 connections now open)
+2019-11-12T16:13:28.225+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56066 #10 (10 connections now open)
+2019-11-12T16:13:28.227+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:56067 #11 (11 connections now open)
+2019-11-12T16:13:28.246+0000 I ACCESS   [conn3]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.353+0000 I ACCESS   [conn7]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.377+0000 I ACCESS   [conn6]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.402+0000 I ACCESS   [conn5]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.412+0000 I ACCESS   [conn10]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.428+0000 I ACCESS   [conn4]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.431+0000 I ACCESS   [conn8]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.472+0000 I ACCESS   [conn9]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:13:28.473+0000 I ACCESS   [conn11]  authenticate db: $external { authenticate: 1, mechanism: "MONGODB-X509", user: "", $db: "$external" }
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn10] end connection 127.0.0.1:56066 (9 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn6] end connection 127.0.0.1:56062 (10 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn3] end connection 127.0.0.1:56059 (7 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn11] end connection 127.0.0.1:56067 (8 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn8] end connection 127.0.0.1:56064 (6 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn9] end connection 127.0.0.1:56065 (5 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn4] end connection 127.0.0.1:56060 (3 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn2] end connection 127.0.0.1:56058 (2 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn1] end connection 127.0.0.1:56057 (4 connections now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn5] end connection 127.0.0.1:56061 (1 connection now open)
+2019-11-12T16:14:55.074+0000 I NETWORK  [conn7] end connection 127.0.0.1:56063 (0 connections now open)

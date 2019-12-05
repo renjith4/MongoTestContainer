@@ -1,0 +1,14 @@
+2019-10-18T15:41:53.594+0100 I CONTROL  [initandlisten] MongoDB starting : pid=14309 port=27017 dbpath=/Users/renjith/projects/other/MongoTestContainer/test/resources/data/db 64-bit host=ptolemy
+2019-10-18T15:41:53.595+0100 I CONTROL  [initandlisten] db version v4.0.3
+2019-10-18T15:41:53.595+0100 I CONTROL  [initandlisten] git version: 7ea530946fa7880364d88c8d8b6026bbc9ffa48c
+2019-10-18T15:41:53.596+0100 I CONTROL  [initandlisten] allocator: system
+2019-10-18T15:41:53.596+0100 I CONTROL  [initandlisten] modules: none
+2019-10-18T15:41:53.597+0100 I CONTROL  [initandlisten] build environment:
+2019-10-18T15:41:53.597+0100 I CONTROL  [initandlisten]     distarch: x86_64
+2019-10-18T15:41:53.598+0100 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-10-18T15:41:53.598+0100 I CONTROL  [initandlisten] options: { net: { ssl: { CAFile: "ca.crt", PEMKeyFile: "server.pem", mode: "requireSSL" } }, processManagement: { fork: true }, storage: { dbPath: "data/db" }, systemLog: { destination: "file", path: "data/mongod.log" } }
+2019-10-18T15:41:53.603+0100 I STORAGE  [initandlisten] exception in initAndListen: NonExistentPath: Data directory /Users/renjith/projects/other/MongoTestContainer/test/resources/data/db not found., terminating
+2019-10-18T15:41:53.604+0100 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2019-10-18T15:41:53.604+0100 I NETWORK  [initandlisten] removing socket file: /tmp/mongodb-27017.sock
+2019-10-18T15:41:53.606+0100 I CONTROL  [initandlisten] now exiting
+2019-10-18T15:41:53.606+0100 I CONTROL  [initandlisten] shutting down with code:100
